@@ -1,0 +1,85 @@
+[00:01:04] [Server thread/INFO]: C0LIGAMES has made the advancement [Not Today, Thank You]
+[00:02:23] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode spectator
+[00:02:23] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Spectator Mode]
+[00:02:42] [Server thread/WARN]: Oak Boat (vehicle of Anzu_ara) moved wrongly! 0.2824256030754668
+[00:02:42] [Server thread/WARN]: Oak Boat (vehicle of Anzu_ara) moved wrongly! 0.5173190786165378
+[00:02:42] [Server thread/WARN]: Oak Boat (vehicle of Anzu_ara) moved wrongly! 0.708469123213149
+[00:02:42] [Server thread/WARN]: Oak Boat (vehicle of Anzu_ara) moved wrongly! 0.8594002081675853
+[00:02:43] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[00:02:43] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[00:02:54] [Server thread/INFO]: C0LIGAMES tried to swim in lava
+[00:03:12] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode spectator
+[00:03:12] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Spectator Mode]
+[00:03:33] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[00:03:33] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[00:03:38] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode creative
+[00:03:38] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Creative Mode]
+[00:04:34] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[00:04:34] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[00:05:44] [Server thread/INFO]: C0LIGAMES has made the advancement [Ice Bucket Challenge]
+[00:07:25] [Server thread/INFO]: Anzu_ara issued server command: /tp s
+[00:07:33] [Server thread/INFO]: C0LIGAMES issued server command: /tps Anzu_ara
+[00:07:40] [Server thread/INFO]: C0LIGAMES issued server command: /op Anzu_ara
+[00:07:40] [Server thread/INFO]: [C0LIGAMES: Made Anzu_ara a server operator]
+[00:07:52] [Server thread/INFO]: Anzu_ara issued server command: /tps C0LIGAMES
+[00:08:14] [Server thread/INFO]: C0LIGAMES issued server command: /deop Anzu_ara
+[00:08:14] [Server thread/INFO]: [C0LIGAMES: Made Anzu_ara no longer a server operator]
+[00:09:05] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> here xD
+[00:09:11] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> sep
+[00:09:13] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> ya lo vis
+[00:09:29] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> esos 7 cosos casi me quitan la vida xD
+[00:09:33] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> XD
+[00:10:06] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> xD
+[00:10:09] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> XD
+[00:17:37] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode creative
+[00:17:37] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Creative Mode]
+[00:17:46] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[00:17:46] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[00:20:19] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> pera
+[00:20:23] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> llego mi familia
+[00:21:22] [Server thread/INFO]: C0LIGAMES has made the advancement [What a Deal!]
+[00:21:42] [Server thread/INFO]: Anzu_ara has made the advancement [What a Deal!]
+[00:22:28] [Async Chat Thread - #6/INFO]: [Not Secure] <Anzu_ara> retirada legendaria xd
+[00:22:31] [Async Chat Thread - #6/INFO]: [Not Secure] <C0LIGAMES> XD
+[00:22:32] [Async Chat Thread - #6/INFO]: [Not Secure] <C0LIGAMES> ok
+[00:22:39] [Async Chat Thread - #6/INFO]: [Not Secure] <Anzu_ara> my father here :"D
+[00:22:44] [Async Chat Thread - #6/INFO]: [Not Secure] <C0LIGAMES> ya pes mñn
+[00:22:47] [Async Chat Thread - #6/INFO]: [Not Secure] <C0LIGAMES> si puedo ovio XD
+[00:23:15] [Async Chat Thread - #6/INFO]: [Not Secure] <Anzu_ara> ntp con lo vaga que estoy todos los dias de 10 hasta que mi familia me joda xd byeeeeeeeee
+[00:23:17] [Server thread/INFO]: Anzu_ara lost connection: Disconnected
+[00:23:17] [Server thread/INFO]: Anzu_ara left the game
+[00:23:24] [Server thread/INFO]: C0LIGAMES lost connection: Disconnected
+[00:23:24] [Server thread/INFO]: C0LIGAMES left the game
+[00:23:32] [Server thread/INFO]: Stopping the server
+[00:23:32] [Server thread/INFO]: Stopping server
+[00:23:32] [Server thread/INFO]: Saving players
+[00:23:32] [Server thread/INFO]: Saving worlds
+[00:23:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Saved 41 block chunks, 245 entity chunks, 1 poi chunks in world 'world' in 0.11s
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[00:23:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[00:23:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[00:23:32] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[00:23:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:23:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:23:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:23:32] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:23:32] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[00:23:32] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[00:23:32] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[00:23:32] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
