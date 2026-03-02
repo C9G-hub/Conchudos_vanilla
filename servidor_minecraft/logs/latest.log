@@ -1,0 +1,338 @@
+[18:16:48] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1044-azure (amd64)
+[18:16:48] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-99-main@81b9122 (2026-01-20T19:08:30Z) for Minecraft 1.21.11
+[18:16:48] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:16:49] [ServerMain/ERROR]: [PluginRemapper] Encountered exception remapping plugins
+java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/ProtectionStones-2.10.4.jar
+	at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:413) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2118) ~[?:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:53) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at net.minecraft.server.Main.main(Main.java:108) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at org.bukkit.craftbukkit.Main.main(Main.java:234) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/LuckPerms-Bukkit-5.4.131.jar
+		... 13 more
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/LuckPerms-Bukkit-5.4.131.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1320) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1541) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:179) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:125) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:120) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:528) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:440) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		... 11 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/ClearLag.jar
+		... 13 more
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/ClearLag.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1320) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1541) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:179) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:125) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:120) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:528) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:440) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		... 11 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsX-2.21.0-dev%252B93-3a6fdd9.jar
+		... 13 more
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsX-2.21.0-dev%252B93-3a6fdd9.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1320) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1541) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:179) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:125) ~[jdk.zipfs:?]
+		at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:120) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:528) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:440) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+		... 11 more
+Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/ProtectionStones-2.10.4.jar
+	at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	... 9 more
+Caused by: java.util.zip.ZipException: zip END header not found
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1320) ~[jdk.zipfs:?]
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1541) ~[jdk.zipfs:?]
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:179) ~[jdk.zipfs:?]
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:125) ~[jdk.zipfs:?]
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:120) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:528) ~[?:?]
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:440) ~[?:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	... 11 more
+[18:16:49] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[18:16:54] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:16:57] [ServerMain/INFO]: Loaded 1470 recipes
+[18:16:57] [ServerMain/INFO]: Loaded 1584 advancements
+[18:16:57] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[18:16:57] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 435.5ms
+[18:16:57] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[18:16:57] [Server thread/INFO]: Loading properties
+[18:16:57] [Server thread/INFO]: This server is running Paper version 1.21.11-99-main@81b9122 (2026-01-20T19:08:30Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[18:16:57] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[18:16:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:16:57] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:16:58] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[18:16:58] [Server thread/INFO]: Default game type: SURVIVAL
+[18:16:58] [Server thread/INFO]: Generating keypair
+[18:16:59] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:16:59] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[18:16:59] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[18:16:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:16:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:16:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:16:59] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:16:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:16:59] [Server thread/INFO]: Preparing level "world"
+[18:16:59] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] NUMA enable flag is not set; however there is NUMA interaction support for this OS.
+[18:16:59] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] Detected 1 NUMA nodes.
+[18:16:59] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[18:16:59] [Server thread/INFO]: Preparing spawn area: 100%
+[18:16:59] [Server thread/INFO]: Prepared spawn area in 1 ms
+[18:16:59] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[18:16:59] [Server thread/INFO]: Prepared spawn area in 4 ms
+[18:16:59] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[18:16:59] [Server thread/INFO]: Prepared spawn area in 0 ms
+[18:16:59] [Server thread/INFO]: Done preparing level "world" (0.567s)
+[18:16:59] [Server thread/INFO]: [spark] Starting background profiler...
+[18:17:00] [Server thread/INFO]: Running delayed init tasks
+[18:17:00] [Server thread/INFO]: Done (12.401s)! For help, type "help"
+[18:17:00] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 27 build(s) behind ***
+[18:17:00] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[18:17:50] [User Authenticator #0/INFO]: UUID of player C0LIGAMES is 599e70f0-d9f7-39e7-82b1-d7a42d6bd4d7
+[18:17:52] [Server thread/INFO]: C0LIGAMES joined the game
+[18:17:52] [Server thread/INFO]: C0LIGAMES[/127.53.118.236:58623] logged in with entity id 38 at ([world_the_end]-899.0909748920295, 61.0, -1194.7610662313111)
+[18:18:20] [Async Chat Thread - #0/INFO]: [Not Secure] <C0LIGAMES> volvi
+[18:18:59] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival}
+[18:19:02] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[18:19:02] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[18:19:30] [User Authenticator #1/INFO]: UUID of player Anzu_ara is ac52b3cf-fd3c-335b-bd53-67f31375a168
+[18:19:32] [Server thread/INFO]: Anzu_ara joined the game
+[18:19:32] [Server thread/INFO]: Anzu_ara[/127.228.234.214:38743] logged in with entity id 197 at ([world_the_end]-904.0713782872629, 69.0, -1192.300000011921)
+[18:19:51] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> hi
+[18:19:57] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> hello
+[18:20:07] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> me instale shaders xd
+[18:20:11] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> SERIO?
+[18:20:13] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> AVER
+[18:20:15] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> XD
+[18:20:16] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> ye
+[18:20:17] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> xD
+[18:20:24] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> no se nota creo,
+[18:20:39] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> pasa cap
+[18:20:44] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> yap
+[18:20:59] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> wait cargo whats
+[18:21:47] [Server thread/INFO]: C0LIGAMES has reached the goal [Sky's the Limit]
+[18:21:52] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> XD
+[18:22:02] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> mejor te la paso por disc xD
+[18:22:18] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> ready
+[18:22:48] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> voy al barco o al piso xd?????????
+[18:22:58] [Async Chat Thread - #1/INFO]: [Not Secure] <Anzu_ara> weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+[18:23:00] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode creative
+[18:23:00] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Creative Mode]
+[18:23:05] [Async Chat Thread - #1/INFO]: [Not Secure] <C0LIGAMES> al piso
+[18:23:06] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> XD
+[18:23:49] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> viste la foto de disc xd
+[18:23:52] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[18:23:52] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[18:23:58] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> pero
+[18:24:04] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> aun no exploramos nada XD
+[18:24:08] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> huh?? xd
+[18:24:29] [Async Chat Thread - #2/INFO]: [Not Secure] <C0LIGAMES> deja busco otra end
+[18:24:29] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> go for my elítas
+[18:25:24] [Async Chat Thread - #2/INFO]: [Not Secure] <Anzu_ara> xD
+[18:26:57] [Async Chat Thread - #3/INFO]: [Not Secure] <C0LIGAMES> ya
+[18:26:59] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> d
+[18:27:04] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> x
+[18:27:35] [Async Chat Thread - #4/INFO]: [Not Secure] <C0LIGAMES> tengo q comer XD
+[18:27:37] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> xd?
+[18:27:39] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> xD
+[18:27:43] [Async Chat Thread - #4/INFO]: [Not Secure] <C0LIGAMES> ya pes
+[18:27:44] [Async Chat Thread - #4/INFO]: [Not Secure] <C0LIGAMES> ve a
+[18:27:52] [Async Chat Thread - #4/INFO]: [Not Secure] <C0LIGAMES> -248 ~ -1528
+[18:27:58] [Async Chat Thread - #4/INFO]: [Not Secure] <C0LIGAMES> tiene barco
+[18:28:03] [Async Chat Thread - #4/INFO]: [Not Secure] <Anzu_ara> vap
+[18:32:35] [Server thread/INFO]: Anzu_ara has reached the goal [Sky's the Limit]
+[18:32:41] [Server thread/INFO]: Anzu_ara has made the advancement [Isn't It Iron Pick]
+[18:54:59] [Async Chat Thread - #5/INFO]: [Not Secure] <C0LIGAMES> lo lograste?
+[18:55:01] [Async Chat Thread - #5/INFO]: [Not Secure] <C0LIGAMES> HIERRO?
+[18:55:02] [Async Chat Thread - #5/INFO]: [Not Secure] <C0LIGAMES> XD
+[18:55:03] [Async Chat Thread - #5/INFO]: [Not Secure] <Anzu_ara> sep
+[18:55:06] [Async Chat Thread - #5/INFO]: [Not Secure] <Anzu_ara> xd
+[18:55:10] [Async Chat Thread - #5/INFO]: [Not Secure] <Anzu_ara> shhhhhhhhhhhhhhhhhhhhhhhhhhh
+[18:55:19] [Async Chat Thread - #5/INFO]: [Not Secure] <C0LIGAMES> seguimos explorando?
+[18:55:23] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara
+[18:55:23] [Server thread/INFO]: [C0LIGAMES: Teleported C0LIGAMES to Anzu_ara]
+[18:55:54] [Async Chat Thread - #5/INFO]: [Not Secure] <Anzu_ara> pase de piedra a diamante ps xd,
+[18:56:02] [Async Chat Thread - #5/INFO]: [Not Secure] <C0LIGAMES> XD
+[18:56:07] [Async Chat Thread - #5/INFO]: [Not Secure] <Anzu_ara> yap, deje todo importante en el cofre de end xd
+[18:57:03] [Async Chat Thread - #5/INFO]: [Not Secure] <Anzu_ara> help xd
+[18:59:33] [Async Chat Thread - #7/INFO]: [Not Secure] <Anzu_ara> xd
+[18:59:33] [Async Chat Thread - #7/INFO]: [Not Secure] <C0LIGAMES> X
+[18:59:35] [Async Chat Thread - #7/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:00:02] [Async Chat Thread - #7/INFO]: [Not Secure] <Anzu_ara> safe con enderpearl xd
+[19:00:12] [Async Chat Thread - #7/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:01:53] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> xd
+[19:02:09] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> ay q llevarnos esas varas XD
+[19:02:15] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> pooooooooooooooor????????
+[19:02:23] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> granjas
+[19:02:27] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> 7-7 no ovejas en la base ok
+[19:02:31] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:03:20] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> ya esta no?
+[19:03:31] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> yep
+[19:03:42] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> afuera hay un portal a casa
+[19:03:48] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> ya
+[19:03:52] [Async Chat Thread - #10/INFO]: [Not Secure] <C0LIGAMES> ta cerca si vi
+[19:03:53] [Async Chat Thread - #10/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:04:10] [Async Chat Thread - #10/INFO]: [Not Secure] <C0LIGAMES> me arriesgo?
+[19:04:16] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> zu baja abajo
+[19:04:17] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:04:43] [Server thread/INFO]: C0LIGAMES fell from a high place
+[19:04:48] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:04:51] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara
+[19:04:51] [Server thread/INFO]: [C0LIGAMES: Teleported C0LIGAMES to Anzu_ara]
+[19:05:04] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> haste tp xd
+[19:05:33] [Server thread/INFO]: C0LIGAMES has made the advancement [Remote Getaway]
+[19:06:03] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> XD QUE PASOOOOO?????? te vi correr con endermans siguiendote xD
+[19:06:09] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:06:10] [Async Chat Thread - #9/INFO]: [Not Secure] <Anzu_ara> voa farmear pearls
+[19:06:14] [Async Chat Thread - #9/INFO]: [Not Secure] <C0LIGAMES> XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+[19:09:57] [Async Chat Thread - #11/INFO]: [Not Secure] <C0LIGAMES> WTF XD
+[19:10:02] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xD
+[19:10:06] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:10:09] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> como se hace un cofre de end??????'
+[19:10:16] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> obsidiana
+[19:10:17] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> hay deje las elitras
+[19:10:20] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> ojo de end
+[19:10:29] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> cofre
+[19:10:41] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> a no
+[19:10:47] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> ojo de end en el centro
+[19:10:52] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> y lo demas obsidiana
+[19:10:58] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xd
+[19:11:01] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> en la hause acemos XD
+[19:11:33] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> chaval
+[19:11:37] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> su disc?
+[19:11:37] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:11:39] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> huh?
+[19:11:41] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> me quieren votar
+[19:11:42] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xD
+[19:11:42] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:11:46] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> ya ya
+[19:11:59] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> estare muteada XD+
+[19:12:02] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> vale
+[19:12:45] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xD
+[19:13:41] [Async Chat Thread - #12/INFO]: [Not Secure] <C0LIGAMES> XD
+[19:13:43] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> pto
+[19:13:53] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xD
+[19:14:02] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> oeeeeeeeee era mioooooooooo
+[19:14:05] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> nice
+[19:14:19] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> mis perlasssssss
+[19:14:21] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> k?
+[19:14:33] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> sep pero da pereza
+[19:15:01] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> hare portal
+[19:15:18] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xD
+[19:15:30] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> xd
+[19:15:36] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> portal ayuda
+[19:15:45] [Async Chat Thread - #12/INFO]: [Not Secure] <Anzu_ara> mira disc
+[19:17:14] [Server thread/INFO]: C0LIGAMES has completed the challenge [Return to Sender]
+[19:24:34] [Server thread/WARN]: Anzu_ara was kicked for floating too long!
+[19:24:34] [Server thread/INFO]: Anzu_ara lost connection: Flying is not enabled on this server
+[19:24:34] [Server thread/INFO]: Anzu_ara left the game
+[19:24:50] [User Authenticator #2/INFO]: UUID of player Anzu_ara is ac52b3cf-fd3c-335b-bd53-67f31375a168
+[19:24:52] [Server thread/INFO]: Anzu_ara joined the game
+[19:24:52] [Server thread/INFO]: Anzu_ara[/127.228.234.214:53077] logged in with entity id 11531 at ([world_nether]-629.7521488107816, 71.77080861019918, -1050.940185265601)
+[19:31:30] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara}
+[19:31:33] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara
+[19:31:33] [Server thread/INFO]: [C0LIGAMES: Teleported C0LIGAMES to Anzu_ara]
+[19:33:31] [Server thread/INFO]: Anzu_ara lost connection: Disconnected
+[19:33:31] [Server thread/INFO]: Anzu_ara left the game
+[19:33:56] [User Authenticator #3/INFO]: UUID of player Anzu_ara is ac52b3cf-fd3c-335b-bd53-67f31375a168
+[19:33:57] [Server thread/INFO]: Anzu_ara joined the game
+[19:33:57] [Server thread/INFO]: Anzu_ara[/127.228.234.214:38463] logged in with entity id 13775 at ([world_nether]-355.2200181755634, 26.791734051182857, -705.5244625061298)
+[19:33:57] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara -325.75 54.00 -702.45
+[19:33:57] [Server thread/INFO]: [C0LIGAMES: Teleported Anzu_ara to -325.750000, 54.000000, -702.450000]
+[19:34:34] [Server thread/INFO]: Anzu_ara lost connection: Disconnected
+[19:34:34] [Server thread/INFO]: Anzu_ara left the game
+[19:34:59] [User Authenticator #4/INFO]: UUID of player Anzu_ara is ac52b3cf-fd3c-335b-bd53-67f31375a168
+[19:35:00] [Server thread/INFO]: Anzu_ara joined the game
+[19:35:00] [Server thread/INFO]: Anzu_ara[/127.228.234.214:60761] logged in with entity id 13945 at ([world_nether]-286.04900847239793, 24.492876911583807, -697.097960546497)
+[19:35:01] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara -272.90 37.00 -679.37
+[19:35:01] [Server thread/INFO]: [C0LIGAMES: Teleported Anzu_ara to -272.900000, 37.000000, -679.370000]
+[19:36:40] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara -241.00 47.57 -542.01
+[19:36:40] [Server thread/INFO]: [C0LIGAMES: Teleported Anzu_ara to -241.000000, 47.570000, -542.010000]
+[19:36:43] [Server thread/INFO]: Anzu_ara lost connection: Disconnected
+[19:36:43] [Server thread/INFO]: Anzu_ara left the game
+[19:37:05] [User Authenticator #5/INFO]: UUID of player Anzu_ara is ac52b3cf-fd3c-335b-bd53-67f31375a168
+[19:37:06] [Server thread/INFO]: Anzu_ara joined the game
+[19:37:06] [Server thread/INFO]: Anzu_ara[/127.228.234.214:54841] logged in with entity id 14163 at ([world_nether]-239.6246289550756, 25.10403144122902, -544.5677559118246)
+[19:37:08] [Server thread/INFO]: C0LIGAMES issued server command: /tp Anzu_ara -242.24 48.00 -540.70
+[19:37:08] [Server thread/INFO]: [C0LIGAMES: Teleported Anzu_ara to -242.240000, 48.000000, -540.700000]
+[19:42:06] [Server thread/INFO]: C0LIGAMES has made the advancement [Those Were the Days]
+[19:42:47] [Server thread/INFO]: Anzu_ara has made the advancement [Those Were the Days]
+[19:44:59] [Server thread/INFO]: C0LIGAMES has made the advancement [War Pigs]
+[19:45:04] [Server thread/INFO]: Anzu_ara has made the advancement [War Pigs]
+[19:46:45] [Server thread/INFO]: C0LIGAMES issued server command: /gamerule keep_inventory true
+[19:46:45] [Server thread/INFO]: [C0LIGAMES: Gamerule keep_inventory is now set to: true]
+[19:47:54] [Server thread/INFO]: C0LIGAMES has made the advancement [Hidden in the Depths]
+[19:47:56] [Server thread/INFO]: C0LIGAMES has made the advancement [Who is Cutting Onions?]
+[19:54:55] [Server thread/INFO]: C0LIGAMES issued server command: /xp add C0LIGAMES 9999 levels
+[19:54:55] [Server thread/INFO]: [C0LIGAMES: Gave 9999 experience levels to C0LIGAMES]
+[19:55:54] [Server thread/INFO]: C0LIGAMES issued server command: /give C0LIGAMES minecraft:gunpowder 64
+[19:55:54] [Server thread/INFO]: [C0LIGAMES: Gave 64 [Gunpowder] to C0LIGAMES]
+[19:58:51] [Server thread/INFO]: C0LIGAMES issued server command: /give C0LIGAMES minecraft:music_disc_pigstep
+[19:58:51] [Server thread/INFO]: [C0LIGAMES: Gave 1 [Music Disc] to C0LIGAMES]
+[20:00:16] [Server thread/INFO]: C0LIGAMES issued server command: /give C0LIGAMES minecraft:glass_pane 128
+[20:00:16] [Server thread/INFO]: [C0LIGAMES: Gave 128 [Glass Pane] to C0LIGAMES]
+[20:02:35] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode creative
+[20:02:35] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Creative Mode]
+[20:02:53] [Server thread/INFO]: C0LIGAMES issued server command: /gamemode survival
+[20:02:53] [Server thread/INFO]: [C0LIGAMES: Set own game mode to Survival Mode]
+[20:06:33] [Server thread/INFO]: Anzu_ara was kicked due to keepalive timeout!
+[20:06:33] [Server thread/INFO]: Anzu_ara lost connection: Timed out
+[20:06:33] [Server thread/INFO]: Anzu_ara left the game
+[20:07:27] [User Authenticator #6/INFO]: UUID of player Anzu_ara is ac52b3cf-fd3c-335b-bd53-67f31375a168
+[20:07:31] [Server thread/INFO]: Anzu_ara joined the game
+[20:07:31] [Server thread/INFO]: Anzu_ara[/127.228.234.214:48671] logged in with entity id 18867 at ([world]616.5, 63.5625, -235.5)
+[20:11:30] [Server thread/INFO]: Villager Villager['Librarian'/16727, uuid='e23c2d84-a4d5-4c0a-8f68-d0560b26567a', l='ServerLevel[world]', x=586.50, y=59.00, z=-207.30, cpos=[36, -13], tl=23393, v=true] died, message: 'Librarian was slain by Patroclo'
+[20:12:00] [Server thread/INFO]: C0LIGAMES lost connection: Timed out
+[20:12:00] [Server thread/INFO]: C0LIGAMES left the game
+[20:13:03] [User Authenticator #7/INFO]: UUID of player C0LIGAMES is 599e70f0-d9f7-39e7-82b1-d7a42d6bd4d7
+[20:13:04] [Server thread/INFO]: C0LIGAMES joined the game
+[20:13:04] [Server thread/INFO]: C0LIGAMES[/127.53.118.236:51853] logged in with entity id 19348 at ([world]593.7424142761585, 65.0, -215.9880511208353)
+[20:15:00] [Server thread/INFO]: C0LIGAMES lost connection: Disconnected
+[20:15:00] [Server thread/INFO]: C0LIGAMES left the game
+[20:16:38] [User Authenticator #8/INFO]: UUID of player C0LIGAMES is 599e70f0-d9f7-39e7-82b1-d7a42d6bd4d7
+[20:16:40] [Server thread/INFO]: C0LIGAMES joined the game
+[20:16:40] [Server thread/INFO]: C0LIGAMES[/127.53.118.236:38065] logged in with entity id 19741 at ([world]596.7734930879901, 65.0, -216.83107571775923)
+[20:17:38] [Server thread/INFO]: C0LIGAMES lost connection: Timed out
+[20:17:38] [Server thread/INFO]: C0LIGAMES left the game
+[20:18:32] [User Authenticator #9/INFO]: UUID of player C0LIGAMES is 599e70f0-d9f7-39e7-82b1-d7a42d6bd4d7
+[20:18:32] [Server thread/INFO]: C0LIGAMES joined the game
+[20:18:32] [Server thread/INFO]: C0LIGAMES[/127.53.118.236:53987] logged in with entity id 19980 at ([world]596.7734930879901, 65.0, -216.83107571775923)
+[20:25:06] [Server thread/INFO]: C0LIGAMES has made the advancement [Minecraft: Trial(s) Edition]
+[20:25:07] [Server thread/INFO]: Anzu_ara has made the advancement [Minecraft: Trial(s) Edition]
+[20:28:21] [Server thread/INFO]: C0LIGAMES lost connection: Timed out
+[20:28:21] [Server thread/INFO]: C0LIGAMES left the game
+[20:29:36] [Server thread/INFO]: Anzu_ara lost connection: Disconnected
+[20:29:36] [Server thread/INFO]: Anzu_ara left the game
